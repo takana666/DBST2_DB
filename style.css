@@ -182,7 +182,7 @@ dialog#detail[open]{display:flex;flex-direction:column}
 .pedigree-section{min-width:0}
 .pedigree-label{font-size:12px;font-weight:800;color:var(--teal);margin:0 0 8px}
 .pedigree-scroll{overflow:auto;overscroll-behavior:contain;border-radius:8px}
-.pedigree-table{min-width:1180px;height:650px;display:grid;grid-template-columns:1.25fr 1.18fr 1.08fr 1fr 1.05fr .42fr;border-left:1px solid #819096;border-top:1px solid #819096}
+.pedigree-table{min-width:1100px;height:650px;display:grid;grid-template-columns:1.25fr 1.18fr 1.08fr 1fr 1.05fr;border-left:1px solid #819096;border-top:1px solid #819096}
 .pedigree-column{display:grid;grid-template-rows:repeat(16,1fr);min-width:0}
 .pedigree-cell{border-right:1px solid #819096;border-bottom:1px solid #819096;padding:5px 7px;display:flex;align-items:center;min-width:0}
 .pedigree-cell.sire{background:var(--blue)}
@@ -194,6 +194,12 @@ dialog#detail[open]{display:flex;flex-direction:column}
 .pedigree-cell small{display:block;color:#61747b;font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .pedigree-factors{display:flex;gap:2px;margin-left:auto;flex:0 0 auto}
 .pedigree-lineage-code{flex:0 0 auto;color:#365761;font-size:11px;font-weight:800}
-.pedigree-lineage{background:#f4f1e8;border-right:1px solid #819096;border-bottom:1px solid #819096;padding:4px 6px;display:flex;align-items:center;justify-content:center;color:#263e46;font-size:11px}
+.horse-diamond{color:#168a9a;margin-right:1px;text-decoration:none}
+.pedigree-generation-1 .pedigree-name{font-size:17px}
+.pedigree-generation-2 .pedigree-name{font-size:16px}
+.pedigree-generation-3 .pedigree-name{font-size:15px}
+.pedigree-generation-4 .pedigree-name{font-size:13px}
+.pedigree-generation-5 .pedigree-name{font-size:11px}
+.pedigree-lineage-code{font-weight:500}
 @media(max-width:1000px){.app{grid-template-columns:320px minmax(0,1fr);gap:12px;padding:12px}dialog#detail{width:calc(100vw - 16px);height:calc(100vh - 16px)}}
 @media(max-width:760px){.app{padding:10px}.workspace #horseTable{min-width:1190px}.detail-head{padding:13px 14px}.detail-body{padding:14px}.pedigree-table{min-width:1080px;height:580px}}
